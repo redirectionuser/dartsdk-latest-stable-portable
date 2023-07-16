@@ -1,4 +1,3 @@
-cd App
-7z.exe x dartsdk*.zip
-move dart-sdk* "DartSdkLatestStable"
-del dartsdk*.zip
+7zTemp\7z.exe x App\dartsdk*.zip -o"App"
+move "App\dart-sdk" "App\DartSdkLatestStable"
+del App\dartsdk*.zip
